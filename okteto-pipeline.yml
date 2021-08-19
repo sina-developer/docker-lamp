@@ -1,0 +1,3 @@
+deploy:
+  - okteto build -t sina-developer/docker-lamp:latest
+  - kubectl apply -f k8s

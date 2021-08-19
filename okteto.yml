@@ -1,0 +1,10 @@
+name: php
+command: bash
+volumes:
+- /root/.composer/cache
+sync:
+- .:/var/www/html
+forward:
+- 8080:80
+reverse:
+- 9000:9000
